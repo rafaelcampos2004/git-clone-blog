@@ -1,0 +1,8 @@
+{% extends "_base.html" %}
+
+{% block content %}
+    {% for post in post_list %}
+    <ul>
+        <a href="{% url 'post_detail' post.pk %}"><li>{{post.title}}</li></a>
+    </ul>
+{% endblock content %}
